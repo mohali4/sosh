@@ -35,7 +35,7 @@ else :
     os.mkdir(INSTALL_DIR)
 
 _C(f"cp -r ./node ./panel ./cli {INSTALL_DIR}")
-_C(f"ln -sf {INSTALL_DIR/'cli'/'run_sosh_cli.py'} /usr/bin/sosh")
+_C(f"ln -sf {INSTALL_DIR/'cli'/'run_sosh_cli.sh'} /usr/bin/sosh")
 
 print("Run following command for countinue setup:")
 print("      sudo sosh ")
