@@ -17,7 +17,7 @@ def reinstall (form:Form):
     form.exit()
 
 def cleanReinstall (form:Form):
-    os.remove(INSTALL_DIR)
+    os.system(f'rm -rf {INSTALL_DIR}')
     os.mkdir(INSTALL_DIR)
     form.exit()
 
