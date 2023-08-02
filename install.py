@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import os
-from cli import __C
+from cli import _C as __C
 from cli.form import Form
 from pathlib import Path
 
