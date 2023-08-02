@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 import os
-from cli import _C
+from cli import __C
 from cli.form import Form
 from pathlib import Path
 
 INSTALL_DIR = Path("/opt/sosh")
+
+def _C (command,*args,**wargs):
+    print(command)
+    return __C(command,*args,**wargs)
 
 if os.getuid() != 0:  # make sure script run as sudo
     _C(f"sudo python3 {__file__}")
